@@ -34,8 +34,8 @@ jobs:
       run: yarn build
      
     - name: Install Surge
-      run: npm install -g surge
-    - name: Run Surge 
+      run: npm install --global surge
+    - name: Deploy to Surge 
       run: surge ./ project3_zoha.surge.sh --token ${{secrets.admin}}
    
         echo Add other actions to build,
