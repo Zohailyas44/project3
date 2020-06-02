@@ -33,7 +33,7 @@ jobs:
     - name: Install Surge
       run: npm install -g surge
     - name: Run Surge 
-      run: surge ./ project3_zoha.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./ project3_zoha.surge.sh --token ${{secrets.admin}}
    
         echo Add other actions to build,
         echo test, and deploy your project.
